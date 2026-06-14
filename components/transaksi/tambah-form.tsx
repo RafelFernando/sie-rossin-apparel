@@ -19,11 +19,6 @@ export default function TambahTransaksiForm() {
 
     return (
         <div className="bg-slate-50 p-3 rounded-sm shadow-sm">
-            {state?.message ? (
-                <div className="p-4 mb-4 text-sm text-slate-700 rounded-lg bg-green-100" role="alert">
-                    <div className="font-medium">{state.message}</div>
-                </div>
-            ) : null}
 
             <form action={formAction}>
                 <div className="grid md:grid-cols-2 gap-1">
