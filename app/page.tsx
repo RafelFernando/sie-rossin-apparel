@@ -1,7 +1,16 @@
-export default function Home() {
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+
+export default async function Home() {
+  const session = await auth();
+
+  if (!session) {
+    redirect("/login");
+  }
+
   return (
     <div>
-      <p>Ini Adalah Dashboard-ku</p>
+      <p>Selamat Datang di Dashboard Executive</p>
     </div>
   );
 }
