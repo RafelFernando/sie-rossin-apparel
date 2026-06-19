@@ -5,7 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import { auth } from "@/lib/auth";
 
 export const metadata: Metadata = {
-  title: "Dashboard SIE",
+  title: "Rossin Apparel",
   description: "Data Analyst",
 };
 
