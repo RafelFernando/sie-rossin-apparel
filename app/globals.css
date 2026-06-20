@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@media print {
+    body {
+        background: white !important;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .button-print {
+        display: none !important;
+    }
+
+    .print\\:hidden {
+        display: none !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+}

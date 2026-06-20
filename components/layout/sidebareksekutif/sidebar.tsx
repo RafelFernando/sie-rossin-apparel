@@ -11,7 +11,7 @@ export default function SidebarEksekutif() {
 
     return (
         <aside
-            className={`
+            className={`sidebar
                 h-full shrink-0 border-r bg-white
                 transition-all duration-50
                 ${collapsed ? "w-20" : "w-52"}
