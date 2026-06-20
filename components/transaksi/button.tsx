@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const EditButton = ({ id }: { id: string }) => {
     return (
-        <Link href={`/transaksi/edit/${id}`} className="rounded-sm p-1 hover:bg-gray-200 cursor-pointer">
+        <Link href={`/admin/transaksi/edit/${id}`} className="rounded-sm p-1 hover:bg-gray-200 cursor-pointer">
             <IoPencil className="size-5" />
         </Link>
     );

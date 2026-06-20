@@ -172,7 +172,7 @@ export default function TambahTransaksiForm() {
                 </div>
 
                 <div className="flex gap-2">
-                    <Link href={"/transaksi"} className="px-10 text-center py-4 font-semibold text-white w-full bg-gray-600 rounded-sm hover:bg-gray-500 cursor-pointer transition-colors">Cancel</Link>
+                    <Link href={"/admin/transaksi"} className="px-10 text-center py-4 font-semibold text-white w-full bg-gray-600 rounded-sm hover:bg-gray-500 cursor-pointer transition-colors">Cancel</Link>
                     <button type="submit" className={clsx("px-10 text-center py-4 font-semibold text-white w-full bg-blue-600 rounded-sm hover:bg-blue-500 cursor-pointer transition-colors", {
                         "opacity-50 cursor-progress animate-pulse": isPending
                     })} disabled={isPending}>{isPending ? "Saving..." : "Save"}</button>

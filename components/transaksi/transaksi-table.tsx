@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
 import RefreshButton from "@/components/refreshbutton";
 import { EditButton, DeleteButton } from "@/components/transaksi/button";
+import ExportButton from "./button-export";
 
 export default async function TransaksiTable() {
     const transaksi = await getTransaksi();
@@ -20,12 +21,13 @@ export default async function TransaksiTable() {
                                 <div className="flex items-center gap-2">
                                     <RefreshButton />
                                     <Link
-                                        href="/transaksi/tambah"
+                                        href="/admin/transaksi/tambah"
                                         className="text-white px-3 py-1 border border-white rounded-sm flex items-center gap-2 bg-green-400 hover:bg-green-600 transition-colors duration-200"
                                     >
                                         <FiPlus size={20} />
                                         Add
                                     </Link>
+                                    <ExportButton />
                                 </div>
                             </th>
                         </tr>

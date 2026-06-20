@@ -6,12 +6,12 @@ import {
 export const menuItems = [
     {
         name: "Dashboard",
-        href: "/dashboard",
+        href: "/admin/dashboard",
         icon: FiHome,
     },
     {
         name: "Transaksi",
-        href: "/transaksi",
+        href: "/admin/transaksi",
         icon: FiDollarSign,
     },
 ];

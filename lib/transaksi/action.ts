@@ -38,7 +38,7 @@ export const saveTransaksi = async (prevState: unknown, formData: FormData) => {
         console.log(error)
         throw error
     }
-    redirect("/transaksi");
+    redirect("/admin/transaksi");
 }
 
 export const updateTransaksi = async (id: string, prevState: unknown, formData: FormData) => {
@@ -93,8 +93,8 @@ export const updateTransaksi = async (id: string, prevState: unknown, formData: 
         console.log(error);
     }
 
-    revalidatePath("/transaksi");
-    redirect("/transaksi");
+    revalidatePath("/admin/transaksi");
+    redirect("/admin/transaksi");
 }
 
 export const deleteTransaksi = async (id: string) => {
@@ -108,5 +108,5 @@ export const deleteTransaksi = async (id: string) => {
         console.log(error);
     }
 
-    revalidatePath("/transaksi");
+    revalidatePath("/admin/transaksi");
 }

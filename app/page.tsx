@@ -8,6 +8,17 @@ export default async function Home() {
     redirect("/login");
   }
 
+  switch (session.user.role) {
+    case "admin":
+      redirect("/admin/dashboard");
+
+    case "eksekutif":
+      redirect("/eksekutif/dashboard");
+
+    default:
+      redirect("/login");
+  }
+
   return (
     <div>
       <p>Selamat Datang di Dashboard Executive</p>

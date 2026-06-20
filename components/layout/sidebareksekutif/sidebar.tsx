@@ -6,7 +6,7 @@ import SidebarItem from "./sidebarItems";
 import { menuItems } from "./menu";
 import Image from "next/image";
 
-export default function Sidebar() {
+export default function SidebarEksekutif() {
     const [collapsed, setCollapsed] = useState(false);
 
     return (
