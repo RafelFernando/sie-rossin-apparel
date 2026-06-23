@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
+@page {
+    size: A4;
+    margin: 15mm;
+}
+
 @media print {
+
+    html,
     body {
         background: white !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-break {
+        break-before: page;
+        page-break-before: always;
+    }
+
+    .avoid-break {
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .sidebar {
@@ -13,12 +32,17 @@
         display: none !important;
     }
 
-    .print\\:hidden {
+    .print-button-container {
         display: none !important;
     }
 
-    @page {
-        size: A4;
-        margin: 20mm;
+    .print\:hidden {
+        display: none !important;
+    }
+
+    .print-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
