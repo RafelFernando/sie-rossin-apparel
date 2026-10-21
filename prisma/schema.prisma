@@ -37,3 +37,43 @@ model User {
   password String?
   role     String  @default("user")
 }
+
+enum SubmissionStatus {
+  SUBMITTED
+  APPROVED
+  REJECTED
+}
+
+model CreditSubmission {
+  id                 String           @id @default(cuid())
+  submissionNumber   String           @unique
+
+  // Data konsumen
+  customerName       String
+  nik                String
+
+  // Data kendaraan
+  dealerName         String
+  vehicleBrand       String
+  vehicleModel       String
+  vehiclePrice       Decimal          @db.Decimal(15, 2)
+  downPayment        Decimal          @db.Decimal(15, 2)
+
+  // Data pinjaman
+  tenorMonths        Int
+  monthlyInstallment Decimal          @db.Decimal(15, 2)
+
+  // Pengajuan dan approval
+  notes              String?          @db.Text
+  status             SubmissionStatus @default(SUBMITTED)
+  approvalNote       String?          @db.Text
+  approvedBy         String?
+  approvedAt         DateTime?
+
+  // Timestamp
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+
+  @@index([status, createdAt])
+  @@index([customerName])
+}

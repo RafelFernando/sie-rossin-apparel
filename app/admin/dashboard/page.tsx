@@ -13,7 +13,7 @@ export default async function DashboardPage() {
                         Selamat Datang <span className="text-blue-600">{session?.user.name}</span> di
                     </h1>
                     <h1 className="text-2xl font-semibold text-black px-1">
-                        Dashboard Analisis Penjualan dan Customer E-Commerce ROSIN APPAREL
+                        Dashboard Perusahaan
                     </h1>
                 </div>
 

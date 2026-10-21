@@ -7,7 +7,7 @@ export default function TransaksiPage() {
         <main className="-m-6">
             <div className="flex justify-between">
                 <h1 className="text-2xl font-semibold text-black py-2 px-1">
-                    Data Transaksi E-Commerce ROSIN APPAREL
+                    Data Pengajuan Kredit
                 </h1>
                 <div className="flex items-center gap-2">
                     <LogoutButton />

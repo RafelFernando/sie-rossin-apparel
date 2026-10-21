@@ -5,13 +5,8 @@ import {
 
 export const menuItems = [
     {
-        name: "Dashboard",
-        href: "/admin/dashboard",
+        name: "Pengajuan Kredit",
+        href: "/admin/credit/tambah",
         icon: FiHome,
-    },
-    {
-        name: "Transaksi",
-        href: "/admin/transaksi",
-        icon: FiDollarSign,
     },
 ];

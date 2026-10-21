@@ -16,7 +16,7 @@ export default async function EditTransaksiPage({
     if (!transaksis) return notFound();
     return (
         <div className="-m-6">
-            <h1 className="text-2xl font-semibold text-black py-2 px-1">Edit Transaksi E-Commerce ROSIN APPAREL</h1>
+            <h1 className="text-2xl font-semibold text-black py-2 px-1">Edit Pengajuan Kredit</h1>
             <EditTransaksiForm transaksis={transaksis} />
         </div>
     )
